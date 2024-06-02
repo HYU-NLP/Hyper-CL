@@ -1,4 +1,4 @@
-# Hyper-CL
+# Hyper-CL: Conditioning Sentence Representations with Hypernetworks
 <div align=center>
   <img alt="Static Badge" src="https://img.shields.io/badge/HyperCL-1.0-blue">
   <img alt="Github Created At" src="https://img.shields.io/github/created-at/HYU-NLP/Hyper-CL">

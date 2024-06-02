@@ -97,7 +97,7 @@ We explain the arguments in following:
 - `--triencoder_head`: Triencoder head (`concat`, `hadamard` or `hypernet`)
 - Refer to `config.py` for other arguments.
 
-Evaluation for Perfomance and Inference Time
+##### Evaluation for Perfomance and Inference Time
 
 ```bash
 bash scripts/eval.sh ./checkpoint/WN18RR/model_best.mdl WN18RR

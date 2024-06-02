@@ -28,7 +28,8 @@ We provide example training scripts for finetuning and evaluating the models in 
 ```bash
 bash run_sts.sh
 ```
-Following the arguments of [C-STS](https://github.com/princeton-nlp/c-sts/tree/main), we explain the additional arguments in following :
+
+Following the arguments of [C-STS](https://github.com/princeton-nlp/c-sts/tree/main), we explain the additional arguments in following :
 * `--objective`: (If you train Hyper-CL, you should use 'triplet_cl_mse')
 * `--cl_temp`: Temperature for contrastive loss
 * `--cl_in_batch_neg`: Add in-batch negative loss to main loss

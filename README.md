@@ -19,31 +19,33 @@
 ### Table of Contents
 
 - [C-STS](#c-sts)
+  - [Requirements](#requirements_csts)
   - [Data](#data)
   - [Training](#train_csts)
+  - [Hyperparameter](#hyperparameters)
 - [SimKGC](#SimKGC)
+  - [Data](#dataset_simkgc)
   - [Training](#train_simkgc)
+  - [Evaluation](#evaluation)
 - [Citation](#citation)
 
 ## C-STS <a name="c-sts"></a>
 
 In this section, we describe how to train a Hyper-CL model by using our code. This code based on [C-STS](https://github.com/princeton-nlp/c-sts/tree/main)
 
-### Data <a name="data"></a>
-
-Download the C-STS dataset and locate the file at data/ (reference the [C-STS repository](https://github.com/princeton-nlp/c-sts/tree/main) for more details.)
-
-### Train Hyper-CL <a name="train_csts"></a>
-
-#### Requirements
+#### Requirements <a name="requirements_csts"></a>
 
 Run the following script, the requirements are the same as C-STS.
+
+#### Data <a name="data"></a>
+
+Download the C-STS dataset and locate the file at data/ (reference the [C-STS repository](https://github.com/princeton-nlp/c-sts/tree/main) for more details.)
 
 ```bash
 pip install -r requirements.txt
 ```
 
-#### Training
+#### Training <a name="train_csts"></a>
 
 We provide example training scripts for finetuning and evaluating the models in the paper. Go to C-STS/ and execute the following command
 
@@ -60,7 +62,7 @@ Following the arguments of [C-STS](https://github.com/princeton-nlp/c-sts/tree/m
 
 - `--hypernet_dual`: Dual encoding that uses separate 2 encoders for sentences 1 and 2 and for the condition.
 
-##### Hyperparameters
+#### Hyperparameters <a name="hyperparameters"></a>
 
 We use the following hyperparamters for training Hyper-CL:
 |Emb.Model | Learning rate (lr) | Weight decay (wd) | Temperature (temp) |
@@ -76,13 +78,13 @@ We use the following hyperparamters for training Hyper-CL:
 We provide example training scripts for finetuning and evaluating the models in the paper. Go to sim-kcg/ and execute the following command.
 This code is based on [SimKCG](https://github.com/intfloat/SimKGC)
 
-#### Preprocessing WN18RR dataset
+#### Preprocessing WN18RR dataset <a name="dataset_simkgc"></a>
 
 ```bash
 bash scripts/preprocess.sh WN18RR
 ```
 
-#### Training <a name="train_simkgc"></a>
+#### Training <a name="train_simkgc"></a> 
 
 ```bash
 bash scripts/train_wn.sh
@@ -95,7 +97,7 @@ We explain the arguments in following:
 - `--triencoder_head`: Triencoder head (`concat`, `hadamard` or `hypernet`)
 - Refer to `config.py` for other arguments.
 
-#### Evaluation for Perfomance and Inference Time
+#### Evaluation for Perfomance and Inference Time <a name="evaluate"></a>
 
 ```bash
 bash scripts/eval.sh ./checkpoint/WN18RR/model_best.mdl WN18RR

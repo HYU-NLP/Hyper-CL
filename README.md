@@ -13,9 +13,11 @@
 ### Table of Contents
 - [C-STS](#C-STS)
   - [Data](#data)
-  - [Fine-tuning](#fine-tuning)
+  - [Train Hyper-CL](#train_HyperCL)
 - [SimKGC](#SimKGC)
 - [Citation](#citation)
 
 ## Data <a name="data"></a>
 Download the C-STS dataset and locate the file at data/ (reference the [C-STS repository](https://github.com/princeton-nlp/c-sts/tree/main) for more details.)
+
+## Train Hyper-CL <a name="train_HyperCL"></a>

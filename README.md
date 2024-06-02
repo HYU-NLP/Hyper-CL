@@ -54,3 +54,37 @@ We use the following hyperparamters for training Hyper-CL:
 | SimCSE_base+hyper64-cl | 2e-5 | 0.1 | 1.7 |
 | SimCSE_large+hyper-cl  | 2e-5 | 0.1 | 1.5 |
 | SimCSE_large+hyper85-cl  | 1e-5 | 0.1 | 1.9 |
+
+## SimKGC <a name="SimKGC"></a>
+
+### Training
+
+We provide example training scripts for finetuning and evaluating the models in the paper. Go to sim-kcg/ and execute the following command
+This code is based on [SimKCG](https://github.com/intfloat/SimKGC)
+
+#### WN18RR dataset
+
+##### Preprocessing
+
+```bash
+bash scripts/preprocess.sh WN18RR
+```
+
+##### Training
+
+```bash
+bash scripts/train_wn.sh
+```
+
+We explain the arguments in following:
+
+- `--pretrained-model`: Backbone model checkpoint (`bert-base-uncased` or `bert-large-uncased`)
+- `--encoding_type`: Encoding type (`bi_encoder` or `tri_encoder`)
+- `--triencoder_head`: Triencoder head (`concat`, `hadamard` or `hypernet`)
+- Refer to `config.py` for other arguments.
+
+Evaluation for Perfomance and Inference Time
+
+```bash
+bash scripts/eval.sh ./checkpoint/WN18RR/model_best.mdl WN18RR
+```

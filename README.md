@@ -7,7 +7,7 @@
 </div>
 
 
-#### Official Repository for "Hyper-CL: Conditioning Sentence Representations with Hypernetworks" [[Paper(arXiv)]]([https://arxiv.org/abs/2403.18277](https://arxiv.org/abs/2403.09490))
+#### Official Repository for "Hyper-CL: Conditioning Sentence Representations with Hypernetworks" [[Paper(arXiv)]](https://arxiv.org/abs/2403.09490))
 ##### Young Hyun Yoo, Jii Cha, Changhyeon Kim and Taeuk Kim. *Accepted to ACL2024 long paper*. 
 ---
 ### Abstract

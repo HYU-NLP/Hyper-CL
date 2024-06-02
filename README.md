@@ -37,10 +37,10 @@ bash run_sts.sh
 ```
 
 Following the arguments of [C-STS](https://github.com/princeton-nlp/c-sts/tree/main), we explain the additional arguments in following :
-* `--objective`: (If you train Hyper-CL, you should use 'triplet_cl_mse')
+* `--objective`: (If you train Hyper-CL, you should use `triplet_cl_mse`)
 * `--cl_temp`: Temperature for contrastive loss
 * `--cl_in_batch_neg`: Add in-batch negative loss to main loss
-* `--hypernet_scaler`: To set the value of K for low-rank implemented Hyper-CL (i.e., hyper64-cl, hyper85-cl), we determine the divisor of the embedding size. For instance, in the base model, 'K=64' for hyper64-cl means the embedding size 768 is divided by 12. Thus, the hypernet_scaler is set to 12.
+* `--hypernet_scaler`: To set the value of K for low-rank implemented Hyper-CL _(i.e., hyper64-cl, hyper85-cl)_, we determine the divisor of the embedding size. For instance, in the base model, 'K=64' for hyper64-cl means the embedding size 768 is divided by 12. Thus, the hypernet_scaler is set to `12`.
 
 * `--hypernet_dual`: Dual encoding that uses separate 2 encoders for sentences 1 and 2 and for the condition.
 

@@ -4,9 +4,9 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/HyperCL-1.0-blue">
   <img alt="Github Created At" src="https://img.shields.io/github/created-at/HYU-NLP/Hyper-CL">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/HYU-NLP/Hyper-CL">
-  [![Arxiv](https://img.shields.io/badge/arXiv-2204.10298-B21A1B)](https://arxiv.org/abs/2204.10298)
   <br>
 </div>
+[![Arxiv](https://img.shields.io/badge/arXiv-2403.09490-B21A1B)](https://arxiv.org/abs/2403.09490)
 
 #### Official Repository for "Hyper-CL: Conditioning Sentence Representations with Hypernetworks" [[Paper(arXiv)]](https://arxiv.org/abs/2403.09490))
 

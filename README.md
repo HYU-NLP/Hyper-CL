@@ -18,7 +18,7 @@
 - [Citation](#citation)
 
 ## C-STS <a name="c-sts"></a>
-In the following section, we introduce how to train aHyper-CL model by using our code.
+In this section, we describe how to train aHyper-CL model by using our code. This code based on [C-STS](https://github.com/princeton-nlp/c-sts/tree/main)
 
 ### Data <a name="data"></a>
 Download the C-STS dataset and locate the file at data/ (reference the [C-STS repository](https://github.com/princeton-nlp/c-sts/tree/main) for more details.)

@@ -37,6 +37,13 @@ Following the arguments of [C-STS](https://github.com/princeton-nlp/c-sts/tree/m
 
 * `--hypernet_dual`: Dual encoding that uses separate 2 encoders for sentences 1 and 2 and for the condition.
 
-Hyperparameters
+##### Hyperparameters
 We use the following hyperparamters for training Hyper-CL:
-
+|Emb.Model  | Learning rate (lr) | Weight decay (wd) | Temperature (temp)   |
+|:--------------|:-----------:|:--------------:|:---------:|
+| DiffCSE_base+hyper-cl   | 3e-5          | 0.1            | 1.5       |
+| DiffCSE_base+hyper64-cl  | 1e-5 | 0.0 | 1.5 |
+| SimCSE_base+hyper-cl | 3e-5 | 0.1 | 1.9 |
+| SimCSE_base+hyper64-cl | 2e-5 | 0.1 | 1.7 |
+| SimCSE_large+hyper-cl  | 2e-5 | 0.1 | 1.5 |
+| SimCSE_large+hyper85-cl  | 1e-5 | 0.1 | 1.9 |

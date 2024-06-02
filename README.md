@@ -30,3 +30,8 @@ We provide example training scripts for finetuning and evaluating the models in 
 bash run_sts.sh
 ```
 We explain the arguments in following:
+* `--objective`: 
+* `--cl_temp`: Temperature for contrastive loss
+* `--cl_in_batch_neg`: 
+* `--hypernet_scaler`:
+* `--hypernet_dual`:

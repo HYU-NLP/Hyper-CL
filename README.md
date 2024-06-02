@@ -24,7 +24,6 @@ Download the C-STS dataset and locate the file at data/ (reference the [C-STS re
 ### Train Hyper-CL <a name="train_HyperCL"></a>
 #### Requirements
 #### Training
-##### Training scripts
 We provide example training scripts for finetuning and evaluating the models in the paper. Go to C-STS/ and execute the following command
 ```bash
 bash run_sts.sh
@@ -34,4 +33,5 @@ We explain the arguments in following:
 * `--cl_temp`: Temperature for contrastive loss
 * `--cl_in_batch_neg`: 
 * `--hypernet_scaler`:
-* `--hypernet_dual`:
+* `--hypernet_dual`: Dual encoding that uses separate 2 encoders for sentences 1 and 2 and for the condition.
+

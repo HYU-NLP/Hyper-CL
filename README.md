@@ -11,13 +11,16 @@
 ##### Young Hyun Yoo, Jii Cha, Changhyeon Kim and Taeuk Kim. *Accepted to ACL2024 long paper*. 
 ---
 ### Table of Contents
-- [C-STS](#C-STS)
+- [C-STS](#c-sts)
   - [Data](#data)
   - [Train Hyper-CL](#train_HyperCL)
 - [SimKGC](#SimKGC)
 - [Citation](#citation)
 
-## Data <a name="data"></a>
+## C-STS <a name="c-sts"></a>
+### Data <a name="data"></a>
 Download the C-STS dataset and locate the file at data/ (reference the [C-STS repository](https://github.com/princeton-nlp/c-sts/tree/main) for more details.)
 
-## Train Hyper-CL <a name="train_HyperCL"></a>
+### Train Hyper-CL <a name="train_HyperCL"></a>
+#### Requirements
+Go to code/SimCSE_RankEncoder and execute the following command

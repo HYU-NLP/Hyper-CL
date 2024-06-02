@@ -76,13 +76,13 @@ We use the following hyperparamters for training Hyper-CL:
 We provide example training scripts for finetuning and evaluating the models in the paper. Go to sim-kcg/ and execute the following command.
 This code is based on [SimKCG](https://github.com/intfloat/SimKGC)
 
-### Preprocessing WN18RR dataset
+#### Preprocessing WN18RR dataset
 
 ```bash
 bash scripts/preprocess.sh WN18RR
 ```
 
-### Training <a name="train_simkgc"></a>
+#### Training <a name="train_simkgc"></a>
 
 ```bash
 bash scripts/train_wn.sh
@@ -95,7 +95,7 @@ We explain the arguments in following:
 - `--triencoder_head`: Triencoder head (`concat`, `hadamard` or `hypernet`)
 - Refer to `config.py` for other arguments.
 
-### Evaluation for Perfomance and Inference Time
+#### Evaluation for Perfomance and Inference Time
 
 ```bash
 bash scripts/eval.sh ./checkpoint/WN18RR/model_best.mdl WN18RR

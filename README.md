@@ -59,7 +59,7 @@ We use the following hyperparamters for training Hyper-CL:
 
 ### Training
 
-We provide example training scripts for finetuning and evaluating the models in the paper. Go to sim-kcg/ and execute the following command
+We provide example training scripts for finetuning and evaluating the models in the paper. Go to sim-kcg/ and execute the following command.
 This code is based on [SimKCG](https://github.com/intfloat/SimKGC)
 
 #### WN18RR dataset

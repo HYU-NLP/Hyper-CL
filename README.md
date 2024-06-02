@@ -13,8 +13,9 @@
 ### Table of Contents
 - [C-STS](#c-sts)
   - [Data](#data)
-  - [Train Hyper-CL](#train_HyperCL)
+  - [Training](#train_csts)
 - [SimKGC](#SimKGC)
+  - [Training](#train_simkgc)
 - [Citation](#citation)
 
 ## C-STS <a name="c-sts"></a>
@@ -23,7 +24,7 @@ In this section, we describe how to train aHyper-CL model by using our code. Th
 ### Data <a name="data"></a>
 Download the C-STS dataset and locate the file at data/ (reference the [C-STS repository](https://github.com/princeton-nlp/c-sts/tree/main) for more details.)
 
-### Train Hyper-CL <a name="train_HyperCL"></a>
+### Train Hyper-CL <a name="train_csts"></a>
 #### Requirements
 Run the following script, the requirements are the same as C-STS.
 ```bash
@@ -70,7 +71,7 @@ This code is based on [SimKCG](https://github.com/intfloat/SimKGC)
 bash scripts/preprocess.sh WN18RR
 ```
 
-##### Training
+##### Training <a name="train_simkgc"></a>
 
 ```bash
 bash scripts/train_wn.sh

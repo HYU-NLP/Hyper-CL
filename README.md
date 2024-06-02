@@ -26,6 +26,7 @@ Download the C-STS dataset and locate the file at data/ (reference the [C-STS re
 #### Training
 ##### Training scripts
 We provide example training scripts for finetuning and evaluating the models in the paper. Go to C-STS/ and execute the following command
-```bash run_sts.sh
+```bash
+bash run_sts.sh
 ```
 We explain the arguments in following:

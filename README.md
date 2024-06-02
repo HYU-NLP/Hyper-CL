@@ -89,3 +89,12 @@ Evaluation for Perfomance and Inference Time
 ```bash
 bash scripts/eval.sh ./checkpoint/WN18RR/model_best.mdl WN18RR
 ```
+
+## Citation
+Please cite our paper if you use Hyper-CL in your work:
+@article{yoo2024hyper,
+  title={Hyper-CL: Conditioning Sentence Representations with Hypernetworks},
+  author={Yoo, Young Hyun and Cha, Jii and Kim, Changhyeon and Kim, Taeuk},
+  journal={arXiv preprint arXiv:2403.09490},
+  year={2024}
+}

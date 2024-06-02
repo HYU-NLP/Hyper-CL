@@ -73,21 +73,18 @@ We use the following hyperparamters for training Hyper-CL:
 | SimCSE_large+hyper85-cl | 1e-5 | 0.1 | 1.9 |
 
 ## SimKGC <a name="SimKGC"></a>
-
-### Training
-
 We provide example training scripts for finetuning and evaluating the models in the paper. Go to sim-kcg/ and execute the following command.
 This code is based on [SimKCG](https://github.com/intfloat/SimKGC)
 
-#### WN18RR dataset
+### WN18RR dataset
 
-##### Preprocessing
+### Preprocessing
 
 ```bash
 bash scripts/preprocess.sh WN18RR
 ```
 
-##### Training <a name="train_simkgc"></a>
+### Training <a name="train_simkgc"></a>
 
 ```bash
 bash scripts/train_wn.sh

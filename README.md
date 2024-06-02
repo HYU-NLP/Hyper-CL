@@ -11,6 +11,11 @@
 ##### Young Hyun Yoo, Jii Cha, Changhyeon Kim and Taeuk Kim. *Accepted to ACL2024 long paper*. 
 ---
 ### Table of Contents
+- [C-STS](#C-STS)
+  - [Data](#data)
+  - [Fine-tuning](#fine-tuning)
+- [SimKGC](#SimKGC)
+- [Citation](#citation)
 
-
-### Quick Start
+## Data <a name="data"></a>
+Download the C-STS dataset and locate the file at data/ (reference the [C-STS repository](https://github.com/princeton-nlp/c-sts/tree/main) for more details.)

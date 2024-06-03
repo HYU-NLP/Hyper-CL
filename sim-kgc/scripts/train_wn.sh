@@ -37,6 +37,4 @@ python3 -u main.py \
 --encoding_type tri_encoder \
 --triencoder_head hypernet \
 --hypernet_scaler 1 \
---hypernet_dual False \
---hypernet_ablation False \
 --max-to-keep 3 "$@" &> "${OUTPUT_DIR}/log.txt"

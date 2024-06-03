@@ -416,7 +416,8 @@ class TriEncoderForClassification(PreTrainedModel):
         hr_vector, tail_vector = output_dict['hr_vector'], output_dict['tail_vector']
         batch_size = hr_vector.size(0)
         labels = torch.arange(batch_size).to(hr_vector.device)
-
+        hr_vector = hr_vector.float()
+        tail_vector = tail_vector.float()
         logits = hr_vector.mm(tail_vector.t())
         if self.training:
             logits -= torch.zeros(logits.size()).fill_diagonal_(self.add_margin).to(logits.device)
